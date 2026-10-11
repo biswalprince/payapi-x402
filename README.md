@@ -2,6 +2,12 @@
 
 A hands-on project to understand HTTP 402 payments and build payment-enabled APIs using Python.
 
+## How x402 Works
+
+-- It tells the client 'Payment Required'
+-- The the client then cann pay directly without any hassle.
+-- The server verifies the payment and then returns the requested resource.
+
 ## Project goals
 
 - Understand the x402 payment protocol.
