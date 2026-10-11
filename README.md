@@ -4,9 +4,11 @@ A hands-on project to understand HTTP 402 payments and build payment-enabled API
 
 ## How x402 Works
 
--- It tells the client 'Payment Required'
--- The the client then cann pay directly without any hassle.
--- The server verifies the payment and then returns the requested resource.
+1. **Request:** A client requests a resource from an API.
+2. **Payment Required:** If payment is required, the server responds with HTTP `402 Payment Required` and provides the payment requirements.
+3. **Payment:** The client creates the required payment payload and retries the request with the payment information.
+4. **Verification:** The server or its configured payment facilitator verifies the payment according to the protocol.
+5. **Resource Delivery:** If verification succeeds, the server provides the requested resource. Payment settlement is handled according to the configured payment flow.
 
 ## Project goals
 
